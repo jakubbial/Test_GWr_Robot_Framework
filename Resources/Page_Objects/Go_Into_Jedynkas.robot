@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ../Resources/GWr_PO.robot
+Resource  ../Resources/Page_Objects/Downvote_Comments.robot
 
 
 *** Variables ***
@@ -20,7 +20,7 @@ Go Into Each Link
 
 
 Find Links
-    @{Elements Links} =  Get Web Elements  ${Region Partial xPath}  #${Jedynka Partial xPath}
+    @{Elements Links} =  Get Web Elements  ${Jedynka Partial xPath}
     [Return]  @{Elements Links}
 
 

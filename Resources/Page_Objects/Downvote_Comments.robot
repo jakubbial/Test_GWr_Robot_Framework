@@ -26,7 +26,7 @@ Expand
     Click Button  ${Pokaz Wiecej Button xPath}
 
 
-Downvote All
+Downvote All Comments
     @{Thumb Locators} =  Detect All Thumbs Down
     Click Downvote For All Comments  @{Thumb Locators}
 

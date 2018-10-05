@@ -8,7 +8,7 @@ ${Close RODO Banner xPath} =  xpath=//a[@class='crossDialog__close']
 
 
 *** Keywords ***
-Run Firefox
+Open Firefox
     [Arguments]  ${web_page}
     Open Browser  ${web_page}  ff
 
@@ -17,7 +17,7 @@ Close Firefox
     Close Browser
 
 
-RODO Banner Terminator
+Close RODO Banner
     ${Is RODO Visible} =  Is RODO Visible
     Run Keyword If  ${Is RODO Visible}  Close RODO Window
 
