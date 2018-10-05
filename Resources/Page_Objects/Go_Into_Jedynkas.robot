@@ -1,6 +1,7 @@
 *** Settings ***
+Documentation  Keywords to downvote all comments in all articles in section "jedynka" on gazeta wroclawska web page
 Library  SeleniumLibrary
-Resource  ../Resources/Page_Objects/Downvote_Comments.robot
+Resource  Downvote_Comments.robot
 
 
 *** Variables ***
@@ -32,5 +33,5 @@ Downvote All Comments in Each Link
     \  @{Links} =  Find Links
     \  Click Element  ${Links[${index}]}
     \  Expand All Comments
-    \  Downvote All
+    \  Downvote All Comments
     \  Go Back
